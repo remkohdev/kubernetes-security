@@ -11,7 +11,7 @@ alias helm=helm3
 ## Connect to OpenShift
 
 ```bash
-oc login --token=sha256~D1dYovK_eHvQgJ3WDg0Qnqi_8yo9xWfmAtH9mMbFM8g --server=https://c115-e.us-south.containers.cloud.ibm.com:30739
+oc login --token=<your-openshift-token> --server=<your-openshift-cluster-url>
 ```
 
 Create a new project or namespace to install Vault,
