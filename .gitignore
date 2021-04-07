@@ -11,3 +11,5 @@ site/
 node_modules
 
 temp/
+docs/vault/0_temp.md 
+docs/vault/4_access_external_vault.md
