@@ -22,10 +22,10 @@ nav:
       - Lab4. Secrets: kubeconfig/4_config_using_secrets.md
       - Lab5. Config Private Registry: kubeconfig/5_config_private_registry.md
     - Key Management Services (KMS):
-        1. Lab1. IBM Secrets Manager: vault/1_ibm_secrets_manager.md
-        1. Vault on OpenShift:
-            1. Lab2. Setup Internal Vault: vault/2_setup_internal_vault.md
-            1. Lab3. Vault Agent Injector: vault/3_access_internal_vault_using_injector_annotations.md
+        - Lab1. IBM Secrets Manager: vault/1_ibm_secrets_manager.md
+        - Vault on OpenShift:
+          - Lab2. Setup Internal Vault: vault/2_setup_internal_vault.md
+          - Lab3. Vault Agent Injector: vault/3_access_internal_vault_using_injector_annotations.md
 
 ## DO NOT CHANGE BELOW THIS LINE
 
@@ -43,7 +43,7 @@ theme:
   features:
     - navigation.tabs
     #- navigation.instant
-    #- navigation.expand
+    - navigation.expand
   palette:
     scheme: default
     primary: black
