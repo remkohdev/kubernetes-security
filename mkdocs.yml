@@ -1,0 +1,106 @@
+# Project information
+site_name: Kubernetes Security
+site_url: https://remkohdev.github.io/kubernetes-security
+site_author: IBM Developer
+
+# Repository
+repo_name: kubernetes-security
+repo_url: https://github.com/remkohdev/kubernetes-security
+edit_uri: edit/master/docs
+docs_dir: docs
+
+# Navigation
+nav:
+  - Welcome:
+    - About the workshop: README.md
+  - Workshop:
+    - App Config:
+      - Lab0. Setup: kubeconfig/0_setup.md
+      - Lab1. Container Config: kubeconfig/1_container_config.md
+      - Lab2. Pod Config: kubeconfig/2_config_using_env.md
+      - Lab3. ConfigMap: kubeconfig/3_config_using_configmap.md
+      - Lab4. Secrets: kubeconfig/4_config_using_secrets.md
+      - Lab5. Config Private Registry: kubeconfig/5_config_private_registry.md
+    - Key Management Services (KMS):
+        1. Lab1. IBM Secrets Manager: vault/1_ibm_secrets_manager.md
+        1. Vault on OpenShift:
+            1. Lab2. Setup Internal Vault: vault/2_setup_internal_vault.md
+            1. Lab3. Vault Agent Injector: vault/3_access_internal_vault_using_injector_annotations.md
+
+## DO NOT CHANGE BELOW THIS LINE
+
+# Copyright
+copyright: Copyright &copy; 2020 IBM Developer
+
+# Theme
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    logo: ibm_8bar_reverse_2
+  features:
+    - navigation.tabs
+    #- navigation.instant
+    #- navigation.expand
+  palette:
+    scheme: default
+    primary: black
+    accent: blue
+  custom_dir: overrides
+
+# Plugins
+plugins:
+  - search
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ibm
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ibmdeveloper
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ibm/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/developerworks
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/ibmdeveloper
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
